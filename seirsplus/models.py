@@ -1929,8 +1929,8 @@ class ExtSEIRSNetworkModel():
                 self.nodeGroupData[groupName]['numQ_S'][0]      = numpy.count_nonzero(self.nodeGroupData[groupName]['mask']*self.X==self.Q_E)
                 self.nodeGroupData[groupName]['numQ_E'][0]      = numpy.count_nonzero(self.nodeGroupData[groupName]['mask']*self.X==self.Q_E)
                 self.nodeGroupData[groupName]['numQ_pre'][0]    = numpy.count_nonzero(self.nodeGroupData[groupName]['mask']*self.X==self.Q_pre)
-                self.nodeGroupData[groupName]['numQ_I_sym'][0]  = numpy.count_nonzero(self.nodeGroupData[groupName]['mask']*self.X==self.Q_I_sym)
-                self.nodeGroupData[groupName]['numQ_I_asym'][0] = numpy.count_nonzero(self.nodeGroupData[groupName]['mask']*self.X==self.Q_I_asym)
+                self.nodeGroupData[groupName]['numQ_I_sym'][0]  = numpy.count_nonzero(self.nodeGroupData[groupName]['mask']*self.X==self.Q_sym)
+                self.nodeGroupData[groupName]['numQ_I_asym'][0] = numpy.count_nonzero(self.nodeGroupData[groupName]['mask']*self.X==self.Q_asym)
                 self.nodeGroupData[groupName]['numQ_R'][0]      = numpy.count_nonzero(self.nodeGroupData[groupName]['mask']*self.X==self.Q_E)
                 self.nodeGroupData[groupName]['N'][0]           = self.numNodes - self.numF[0]
 
